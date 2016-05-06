@@ -1,6 +1,6 @@
 # freebnb
 freebnb, an opensource projet to free bnb:
-* phantom php
+* phalcon
 * mangopay
 * blockchain: https://www.ethereum.org/
 
