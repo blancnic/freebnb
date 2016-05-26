@@ -11,6 +11,16 @@ try {
 
    //Create a DI
    $di = new Phalcon\DI\FactoryDefault();
+   
+   // Setup the database service
+    $di->set('db', function () {
+        return new DbAdapter(array(
+            "host"     => "localhost",
+            "username" => "postgres",
+            "password" => "freebnb",
+            "dbname"   => "freebnb"
+        ));
+    });
 
    //Setup the view component
    $di->set('view', function(){
